@@ -1,0 +1,20 @@
+= link:https://rdlopes.github.io/nifi-custom-ui[NiFi Custom UI]
+:author:    Rui LOPES
+:email:     <rui.d.lopes@me.com>
+
+A demo for using Maven overlays to customize https://nifi.apache.org/[NiFi] UI elements.
+
+Using https://maven.apache.org/plugins/maven-war-plugin/overlays.html[Maven overlays], you can easily customize https://nifi.apache.org/[NiFi] UI.
+
+In this simple example, only a few icons have been replaced.
+But really, all assets can be updated inside nifi-web-ui WAR.
+
+Then, by updating nifi-server-nar using zip, the new assets will be picked up by the NiFi scripts.
+
+== Credits
+
+Icons used as replacements are courtesy of
+
+* Freepik for the unicorn logo
+* Md Tanvirul Haque for the yellow star
+* Rizki Ahmad Fauzi for the blue star

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nifi:
+    build:
+      context: .
+    image: io.github.rdlopes/nifi-custom-ui
+    container_name: nifi
+    ports:
+      - '8443:8443'
+    environment:
+      - SINGLE_USER_CREDENTIALS_USERNAME=admin
+      - SINGLE_USER_CREDENTIALS_PASSWORD=administrator
+

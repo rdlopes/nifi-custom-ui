@@ -9,11 +9,25 @@ Using https://maven.apache.org/plugins/maven-war-plugin/overlays.html[Maven over
 In this simple example, only a few icons have been replaced.
 But really, all assets can be updated inside nifi-web-ui WAR.
 
-Then, by updating nifi-server-nar using zip, the new assets will be picked up by the NiFi scripts.
+Then, by updating nifi-server-nar using `zip`, the new assets will be picked up by the NiFi scripts.
+
+== The project
+
+This is a Maven project with a single module, nifi-web-ui, where the overlay happens.
+
+A `Dockerfile` and its `docker-compose.yaml` friend are present to boot up a NiFi instance with the updated UI.
+
+NiFi instance is accessible at address `http://127.0.0.1:8443/nifi`.
+User/password for the instance are given in the `docker-compose.yaml`.
+
+Please wait for NiFi to load its NARs and start Jetty before trying to access it.
+It can take a few seconds to boot up.
 
 == Credits
 
-Icons used as replacements are courtesy of
+Modified UI comes from the default NiFi installation.
+
+Icons used as replacements are courtesy of:
 
 * Freepik for the unicorn logo
 * Md Tanvirul Haque for the yellow star

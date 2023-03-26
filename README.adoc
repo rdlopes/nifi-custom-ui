@@ -1,4 +1,4 @@
-= link:https://rdlopes.github.io/nifi-custom-ui[NiFi Custom UI]
+= NiFi Custom UI
 :author:    Rui LOPES
 :email:     <rui.d.lopes@me.com>
 

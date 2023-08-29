@@ -19,7 +19,7 @@
   <properties>
     <java.version>11</java.version>
     <nifi.version>1.23.2</nifi.version>
-    <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
+    <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
   </properties>
 
 </project>

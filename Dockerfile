@@ -1,4 +1,4 @@
-FROM maven:3.9.5-eclipse-temurin-11-alpine as builder
+FROM maven:3.9.9-eclipse-temurin-11-alpine as builder
 COPY . /tmp/
 WORKDIR /tmp/
 RUN mvn -B package -DskipTests

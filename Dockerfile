@@ -3,7 +3,7 @@ COPY . /tmp/
 WORKDIR /tmp/
 RUN mvn -B package -DskipTests
 
-FROM apache/nifi:1.23.2
+FROM apache/nifi:1.28.1
 COPY --from=builder /tmp/nifi-web-ui/target/nifi-web-ui-1.20.0.war NAR-INF/bundled-dependencies/nifi-web-ui-1.20.0.war
 USER root
 RUN  apt-get update -y && \
